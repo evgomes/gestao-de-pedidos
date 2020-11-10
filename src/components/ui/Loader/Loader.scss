@@ -1,0 +1,53 @@
+.app-loader {
+  .progress-horizontal {
+    background-color: rgba(0, 0, 0, 0.125);
+  }
+
+  .bar-horizontal {
+    background-image: linear-gradient(to right, darken(#b0e0e6, 8%), darken(#b0e0e6, 12%), darken(#b0e0e6, 18%));
+  }
+
+  .backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .progress-horizontal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    margin: 0;
+    display: block;
+    overflow-x: hidden;
+    z-index: 999;
+  }
+
+  .bar-horizontal {
+    width: 50%;
+    height: 100%;
+    margin-left: 0;
+    animation-name: spinner;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spinner {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 100%;
+      margin-left: 50%;
+    }
+  }
+}

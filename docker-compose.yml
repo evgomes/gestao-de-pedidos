@@ -1,0 +1,21 @@
+server:
+ build: ./
+ container_name: gestao-pedidos-server
+ ports:
+  - 3000:3000
+ volumes:
+  - ./:/app
+ links:
+  - mongodb
+ environment:
+  - "REACT_APP_API_URL=http://localhost:3000/"
+  - "NODE_ENV=production"
+
+  
+mongodb:
+ image: mongo
+ container_name: gestao-pedidos-db
+ ports:
+  - 27017:27017
+ volumes:
+  - mongodb-data:/data/db

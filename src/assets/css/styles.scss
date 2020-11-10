@@ -1,0 +1,69 @@
+﻿@import "node_modules/bootstrap/scss/bootstrap";
+
+html {
+  font-size: 17px;
+}
+
+body {
+  margin: 0;
+  font-family: "Livvic", sans-serif;
+}
+
+main {
+  min-height: calc(100vh - 145px);
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.card,
+.card-header,
+.card-footer,
+.table,
+tr,
+th,
+td,
+.form-control {
+  border-color: rgba(#b0e0e6, .8) !important;
+}
+
+.table-responsive {
+  border-top: 0;
+}
+
+.card-header,
+.table-striped tbody tr:nth-of-type(2n+1) {
+  background-color: #b0e0e6;
+  color: #000;
+}
+
+$cor-primary: #4169E1;
+$cor-danger: #800000;
+
+.btn-primary {
+  background-color: $cor-primary;
+  border-color: $cor-primary;
+
+  &:hover,
+  &:disabled,
+  &.disabled {
+    background-color: rgba($cor-primary, .8);
+    border-color: rgba($cor-primary, .8);
+  }
+}
+
+.btn-danger {
+  background-color: $cor-danger;
+  border-color: $cor-danger;
+
+  &:hover,
+  &:disabled,
+  &.disabled {
+    background-color: rgba($cor-danger, .8);
+    border-color: rgba($cor-danger, .8);
+  }
+}
