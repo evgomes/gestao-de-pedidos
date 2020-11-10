@@ -28,11 +28,11 @@ Com o Docker instalado, abra o terminal ou prompt de comando, dependendo do S.O.
 
 Para acessar o sistema, utilize a URL `http://localhost:3000/`. Você verá a tela inicial, onde são cadastrados os pedidos, através da categorização por empresa, ano e ciclo:
 
-![Tela inicial](https://raw.githubusercontent.com/evgomes/gestao-de-pedidos/main/images/gestao-pedidos-1.png?token=ADTMTKLBWWAHZO4ZSRPN2ES7VKNB2 "Tela inicial")
+![Tela inicial](https://raw.githubusercontent.com/evgomes/gestao-de-pedidos/main/images/gestao-pedidos-1.png "Tela inicial")
 
 O sistema possui ainda outra tela, para anotações textuais simples:
 
-![Tela de anotações](https://raw.githubusercontent.com/evgomes/gestao-de-pedidos/main/images/gestao-pedidos-2.png?token=ADTMTKN7KGENJLSVFTWXKOK7VKNFI "Tela de anotações")
+![Tela de anotações](https://raw.githubusercontent.com/evgomes/gestao-de-pedidos/main/images/gestao-pedidos-2.png "Tela de anotações")
 
 ## Limitações
 
